@@ -33,8 +33,8 @@ class Home extends React.Component{
           <ul id="dc_mega-menu-orange" className="dc_mm-orange">
             <li class ="active"><Link to="/">চাষী</Link></li>
             <li> <Link to="/Hatbazaar">হাটবাজার</Link> </li>
-            <li><Link to="/services">সেবা</Link></li>
-            <li><a href="blog.html">ব্লগ</a> </li>
+            <li><Link to="/Services">সেবা</Link></li>
+            <li><Link to="/Blog">ব্লগ </Link> </li>
             <div className="clear" />
           </ul>
         </div>
