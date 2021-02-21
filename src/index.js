@@ -12,7 +12,7 @@ import Hatbazaarpreview from './pages/Hatbazaarpreview';
 import Hatbazaarpreview1 from './pages/Hatbazaarpreview1';
 import Hatbazaarpreview2 from './pages/Hatbazaarpreview2';
 import Hatbazaarpreview3 from './pages/Hatbazaarpreview3';
-import Hatbazarup from './pages/Hatbazarup';
+import Hatbazaarup from './pages/Hatbazaarup';
 import Login from './pages/Login';
 import Otp from './pages/Otp';
 import Preview from './pages/Preview'
@@ -28,7 +28,7 @@ import reportWebVitals from './reportWebVitals';
 const routing = (
   <Router>
     <div>
-      <Route exact path="/" component={Home}/>
+      <Route exact path="/" component={Login}/>
       <Route path="/Hatbazaar" component={Hatbazaar}/>
       <Route path="/Services" component={Services}/>
       <Route path="/Blog" component={Blog}/>
@@ -38,9 +38,9 @@ const routing = (
       <Route path="/Hatbazaarpreview1" component={Hatbazaarpreview1}/>
       <Route path="/Hatbazaarpreview2" component={Hatbazaarpreview2}/>
       <Route path="/Hatbazaarpreview3" component={Hatbazaarpreview3}/>
-      <Route path="/Hatbazarup" component={Hatbazarup}/>
-      <Route path="/Login" component={Login}/>
+      <Route path="/Hatbazaarup" component={Hatbazaarup}/>
       <Route path="/Otp" component={Otp}/>
+      <Route path="/Home" component={Home}/>
       <Route path="/Preview" component={Preview}/>
       <Route path="/Preview1" component={Preview1}/>
       <Route path="/Productbycat" component={Productbycat}/>

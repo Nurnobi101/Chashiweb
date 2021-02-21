@@ -8,7 +8,7 @@ class Blog extends React.Component{
                  <div className="wrap">
         <div className="header_top">
           <div className="logo">
-            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+            <a href="index.html"><img src="assets/images/logo.png" alt="" /></a>
           </div>
           <div className="header_top_right">
             <div className="search_box">
@@ -17,23 +17,20 @@ class Blog extends React.Component{
               </form>
             </div>
             <div className="shopping_cart">
-              <div className="cart">
-                <a href="update.html" title="View my shopping cart" rel="nofollow">
-                  <span className="cart_title">বাজার আপডেট</span>
-                </a>
+              <div className="cart"><a> <Link to="/Update">বাজার আপডেট</Link></a>
               </div>
             </div>
-            <div className="login"><a href="login.html"> লগ ইন</a></div>
+            <div className="login"><a> <Link to="/">লগ আউটস</Link></a></div>
             <div className="clear" />
           </div>
           <div className="clear" />
         </div>
         <div className="menu">
           <ul id="dc_mega-menu-orange" className="dc_mm-orange">
-            <li><a id="active" href="index.html">চাষী</a></li>
-            <li><a href="hatbazaar.html"> হাটবাজার</a> </li>
-            <li><a href="service.html">সেবা</a></li>
-            <li><a href="blog.html">ব্লগ</a> </li>
+          <li><Link to="/Home">চাষী</Link></li>
+          <li> <Link to="/Hatbazaar">হাটবাজার</Link> </li>
+          <li><Link to="/Services">সেবা</Link></li>
+          <li class ="active"><Link to="/Blog">ব্লগ </Link> </li>
             <div className="clear" />
           </ul>
         </div>
@@ -75,7 +72,7 @@ class Blog extends React.Component{
             <div className="samepostblog clear">
               <h2><a href>কাউন চাষ </a></h2>
               <h4>১০/২৬/২০২০<a href="#">এস এম নূরনবী</a></h4>
-              <a href="#"><img src="images/kaun.jpg" alt="post image" /></a>
+              <a href="#"><img src="assets/images/kaun.jpg" alt="post image" /></a>
               <p>কাউন হচ্ছে পুষ্টিকর দানা জাতীয় খাদ্য। কাউন দিয়ে বিভিন্ন সুস্বাদু খাবার যেমন-পায়েস তৈরি করা হয়। বিস্কুট তৈরিতে কাউন ব্যবহার করা হয়। তাই দানা জাতীয় ফসল হিসেবে কাউনের চাহিদা শহর গ্রাম সবখানেই আছে। কাউন চাষ করে পারিবারিক পুষ্টির চাহিদা পূরণের পাশাপাশি অতিরিক্ত উৎপাদন বাজারে বিক্রি করে বাড়তি আয় করাও সম্ভব। এছাড়া দেশের চাহিদা মেটানোর পর অতিরিক্ত উৎপাদন বিদেশে রপ্তানি করা সম্ভব। এক্ষেত্রে বিভিন্ন রপ্তানিকারক প্রতিষ্ঠান সহায়তা দিয়ে থাকে। কাউন বিদেশে রপ্তানি করার জন্য এসব প্রতিষ্ঠানের সাথে যোগাযোগ করা যেতে পারে।</p>
               <div className="readmoreblog clear">
                 <a href="post.html">Read More</a>
@@ -88,7 +85,7 @@ class Blog extends React.Component{
               <br />
               <h2><a href>কাউন চাষ </a></h2>
               <h4>১০/২৬/২০২০<a href="#">মাহফুজা সুলতানা</a></h4>
-              <a href="#"><img src="images/kaun.jpg" alt="post image" /></a>
+              <a href="#"><img src="assets/images/kaun.jpg" alt="post image" /></a>
               <p>কাউন হচ্ছে পুষ্টিকর দানা জাতীয় খাদ্য। কাউন দিয়ে বিভিন্ন সুস্বাদু খাবার যেমন-পায়েস তৈরি করা হয়। বিস্কুট তৈরিতে কাউন ব্যবহার করা হয়। তাই দানা জাতীয় ফসল হিসেবে কাউনের চাহিদা শহর গ্রাম সবখানেই আছে। কাউন চাষ করে পারিবারিক পুষ্টির চাহিদা পূরণের পাশাপাশি অতিরিক্ত উৎপাদন বাজারে বিক্রি করে বাড়তি আয় করাও সম্ভব। এছাড়া দেশের চাহিদা মেটানোর পর অতিরিক্ত উৎপাদন বিদেশে রপ্তানি করা সম্ভব। এক্ষেত্রে বিভিন্ন রপ্তানিকারক প্রতিষ্ঠান সহায়তা দিয়ে থাকে। কাউন বিদেশে রপ্তানি করার জন্য এসব প্রতিষ্ঠানের সাথে যোগাযোগ করা যেতে পারে।</p>
               <div className="readmoreblog clear">
                 <a href="post.html">Read More</a>

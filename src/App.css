@@ -23,6 +23,158 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top:10px;
+}
+.button5 {background-color: #555555;}
+.top-locationu{
+
+  margin-top:8px;
+  margin-bottom:8px;
+  width:100%;
+  float:20px;
+}
+.top-locationu select{
+    width:300px;
+    padding: 10px 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+img{
+  max-width:200px;
+}
+input[type=file]{
+padding:5px 5px;
+text-align: center;
+text-decoration: none;
+font-size: 20px;
+margin: 2px 4px;
+width:23%;
+border-radius: 8px;
+background-color: #4CAF50;
+}
+h2{
+font-size: 16px;
+padding:2px 2px;
+}
+input[type=text1] {
+  width:49%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  border:2px 2px;
+  border-radius: 4px;
+  background-color: #ffff;
+  color:black;
+}
+input[type=text2] {
+  width:10%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  border:2px 2px;
+  border-radius: 4px;
+  background-color: #ffff;
+  color:black;
+}
+input[type=text3] {
+  width:20%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  border:2px 2px;
+  border-radius: 4px;
+  background-color: #ffff;
+  color:black;
+}
+textarea {
+  width:49%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border:2px 2px;
+  border-radius: 4px;
+  background-color: #ffff;
+  color:black;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.button {
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
 
 .App-link {
   color: #61dafb;

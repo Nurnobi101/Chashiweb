@@ -18,20 +18,17 @@ class Home extends React.Component{
               </form>
             </div>
             <div className="shopping_cart">
-              <div className="cart">
-                <a href="update.html" title="View my shopping cart" rel="nofollow">
-                  <span className="cart_title">বাজার আপডেট</span>
-                </a>
+              <div className="cart"><a> <Link to="/Update">বাজার আপডেট</Link></a>
               </div>
             </div>
-            <div className="login"><a href="login.html"> লগ ইন</a></div>
+            <div className="login"><a> <Link to="/">লগ আউটস</Link></a></div>
             <div className="clear" />
           </div>
           <div className="clear" />
         </div>
         <div className="menu">
           <ul id="dc_mega-menu-orange" className="dc_mm-orange">
-            <li class ="active"><Link to="/">চাষী</Link></li>
+            <li class ="active"><Link to="/Home">চাষী</Link></li>
             <li> <Link to="/Hatbazaar">হাটবাজার</Link> </li>
             <li><Link to="/Services">সেবা</Link></li>
             <li><Link to="/Blog">ব্লগ </Link> </li>
@@ -63,7 +60,7 @@ class Home extends React.Component{
             </div>
             <div> 
               <button className="btn-Asked"> 
-                <a href="que.html">প্রশ্ন জিজ্ঞাসা করুন</a>
+                <a><Link to="/Que">প্রশ্ন জিজ্ঞাসা করুন</Link></a>
               </button>
             </div>
             <div className="top-fixed ">

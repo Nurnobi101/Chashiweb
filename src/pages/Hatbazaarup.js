@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-class Update extends React.Component{
+class Hatbazaarup extends React.Component{
     render(){
         return(
-            <div>
-                 <div>
-        <style dangerouslySetInnerHTML={{__html: "\ntable, th, td {\n  border: 1px solid black;\n  border-collapse: collapse;\n}\nth, td {\n  padding: 5px;\n  text-align: left;\n}\n" }} />
+          <div>
         <div className="wrap">
           <div className="header_top">
             <div className="logo">
@@ -18,44 +16,64 @@ class Update extends React.Component{
                   <input type="text" defaultValue="আপনি কি খুঁজছেন?........." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'আপনি কি খুঁজছেন?.........';}" /><input type="submit" defaultValue="সার্চ করুন" />
                 </form>
               </div>
-              <div className="login"><a> <Link to="/">লগ আউটস</Link></a></div>
+              <div className="shopping_cart">
+                <div className="cart">
+                  <a href="update.html" title="View my shopping cart" rel="nofollow">
+                    <span className="cart_title">বাজার আপডেট</span>
+                  </a>
+                </div>
+              </div>
+              <div className="login"><a href="login.html"> লগ ইন</a></div>
               <div className="clear" />
             </div>
             <div className="clear" />
           </div>
           <div className="menu">
             <ul id="dc_mega-menu-orange" className="dc_mm-orange">
-              <li><a href="index.html">চাষী</a></li>
-              <li><a href="hatbazaar.html"> হাটবাজার</a> </li>
-              <li><a id="active" href="service.html">সেবা</a></li>
-              <li><a href="blog.html">ব্লগ</a> </li>
+            <li><Link to="/Home">চাষী</Link></li>
+            <li class ="active"><Link to="/Hatbazaar">হাটবাজার</Link> </li>
+            <li><Link to="/Services">সেবা</Link></li>
+            <li><Link to="/Blog">ব্লগ </Link> </li>
               <div className="clear" />
             </ul>
           </div>
-          <div className="header_bottom"> <center>
-              <br />
-              <h2>বাজার আপডেট</h2>
-              <p>১০/২৭/২০২০</p>
-              <br />
-              <table style={{width: '100%'}}>
-                <tbody><tr>
-                    <th>আইটেম</th>
-                    <th>টাকা</th>
-                  </tr>
-                  <tr>
-                    <td>আলু কেজি</td>
-                    <td> ৪০</td>
-                  </tr>
-                  <tr>
-                    <td>রসুন কেজি </td>
-                    <td>৫০</td>
-                  </tr>
-                  <tr>
-                    <td>পিয়াজ কেজি </td>
-                    <td>৯০</td>
-                  </tr>
-                </tbody></table> 
-            </center>
+          <div className="header_bottom">
+            <div className="top-locationu "><center>
+                <select>
+                  <option value="Category">অবস্থান নির্বাচন করুন</option>
+                  <option value="Category1">ঢাকা</option>
+                  <option value="Category2">চট্টগ্রাম</option>
+                  <option value="Category3">সিলেট</option>
+                  <option value="Category2">খুলনা</option>
+                  <option value="Category1">বরিশাল</option>
+                  <option value="Category2">রাজশাহী</option>
+                  <option value="Category1">রংপুর</option>
+                  <option value="Category2">ময়মনসিংহ</option>
+                </select>
+                <select>
+                  <option value="Status">শ্রেণী নির্বাচন করুন</option>
+                  <option value="Status1">ক্যাটাগরি নাম</option>
+                  <option value="Status2">ক্যাটাগরি নাম</option>
+                </select>
+                <br />
+                <form>
+                  <input type="text1" id="question" name="question" defaultValue="Title/শিরোনাম" />
+                </form>
+              </center>
+            </div>
+            <div><center>
+                <img id="blah" src="assets/images/200.png" alt="your image" />
+                <h2>ছবি আপলোড করুন</h2><h2>
+                  <input type="file" onchange="readURL(this);" />
+                  <form>
+                    <input type="text2" id="question" name="question" defaultValue="মূল্য (৳)" />
+                    <input type="text3" id="question" name="question" defaultValue="নাম:" />
+                    <input type="text3" id="question" name="question" defaultValue="ফোন নাম্বার:" />
+                  </form>
+                  <textarea id name rows={4} cols={4} defaultValue={"বিবরণ\n"} /><br />
+                  <button className="button button5">পাঠান</button>
+                  <center>
+                  </center></h2></center></div>
             <div className="clear" />
           </div>	
           <div className="footer">
@@ -101,15 +119,14 @@ class Update extends React.Component{
                 </div>
               </div>
               <div className="copy_right">
-                <p>চাষা ©  সর্বস্বত্ব সংরক্ষিত </p>
+                  <p>চাষী ©  সর্বস্বত্ব সংরক্ষিত </p>
+                </div>
               </div>
             </div>
-          </div>
-        </div></div>
+          </div></div>
     );
-
-            </div>
-
-        )}
+	
+	}
 }
-export default Update
+
+export default Hatbazaarup

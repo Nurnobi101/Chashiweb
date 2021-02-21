@@ -64,6 +64,58 @@
     $('#dc_mega-menu-orange').dcMegaMenu({rowItems:'4',speed:'fast',effect:'fade'});
   });
 </script>
+<script src='https://cdn.tiny.cloud/1/ltlndpncu6qqgllksy9fguysrpue4lany3qebd54uevx99kf/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+</script>
+<script>
+  tinymce.init({
+    selector: '#mytextarea'
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    /*
+    var defaults = {
+        containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear' 
+     };
+    */
+    
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    
+  });
+</script>
+  <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+  <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function(){
+    $('.flexslider').flexslider({
+    animation: "slide",
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+    });
+  });
+  </script>
+  <script>
+    function readURL(input) {
+           if (input.files && input.files[0]) {
+               var reader = new FileReader();
+
+               reader.onload = function (e) {
+                   $('#blah')
+                       .attr('src', e.target.result);
+               };
+
+               reader.readAsDataURL(input.files[0]);
+           }
+       }
+</script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a

@@ -11,7 +11,7 @@ import Hatbazaarpreview from './pages/Hatbazaarpreview';
 import Hatbazaarpreview1 from './pages/Hatbazaarpreview1';
 import Hatbazaarpreview2 from './pages/Hatbazaarpreview2';
 import Hatbazaarpreview3 from './pages/Hatbazaarpreview3';
-import Hatbazarup from './pages/Hatbazarup';
+import Hatbazaarup from './pages/Hatbazaarup';
 import Login from './pages/Login';
 import Otp from './pages/Otp';
 import Preview from './pages/Preview'
@@ -38,7 +38,7 @@ function App() {
         <Hatbazaarpreview1/>
         <Hatbazaarpreview2/>
         <Hatbazaarpreview3/>
-        <Hatbazarup/>
+        <Hatbazaarup/>
         <Login/>
         <Otp/>
         <Preview/>

@@ -17,23 +17,22 @@ class Hatbazaar extends React.Component{
               </form>
             </div>
             <div className="shopping_cart">
-              <div className="cart">
-                <a href="update.html" title="View my shopping cart" rel="nofollow">
-                  <span className="cart_title">বাজার আপডেট</span>
-                </a>
+              <div className="cart"><a> <Link to="/Update">বাজার আপডেট</Link></a>
               </div>
             </div>
-            <div className="login"><a href="login.html"> লগ ইন</a></div>
+            <div className="login"><a> <Link to="/">লগ আউটস</Link></a></div>
             <div className="clear" />
+
           </div>
           <div className="clear" />
         </div>
         <div className="menu">
           <ul id="dc_mega-menu-orange" className="dc_mm-orange">
-          <li><Link to="/">চাষী</Link></li>
-          <li class ="active"> <Link to="/Hatbazaar">হাটবাজার</Link> </li>
-          <li><Link to="/services">সেবা</Link></li>
-            <li><a href="blog.html">ব্লগ</a> </li>
+          <li><Link to="/Home">চাষী</Link></li>
+          <li class ="active"><Link to="/Hatbazaar">হাটবাজার</Link> </li>
+          <li><Link to="/Services">সেবা</Link></li>
+          <li><Link to="/Blog">ব্লগ </Link> </li>
+
             <div className="clear" />
           </ul>
         </div>
@@ -62,7 +61,7 @@ class Hatbazaar extends React.Component{
             </div>
             <div> 
               <button className="btn-post"> 
-                <a href="hatbazarup.html">আপনার বিজ্ঞাপন দিন</a>
+                <a><Link to="/Hatbazaarup">আপনার বিজ্ঞাপন দিন</Link></a>
               </button>
             </div>
             <div className="top-location ">
@@ -93,56 +92,56 @@ class Hatbazaar extends React.Component{
                 <h2>আলু</h2>
                 <p>ময়মনসিংহ</p>
                 <p><span className="price">৳৩৩০<br /> তারিখ:২৬ অক্টো ২০২০</span></p>
-                <div className="button"><span><a href="hatbazaar-preview.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>
               <div className="grid_1_of_4 images_1_of_4">
                 <a href="#"><img src="assets/images/post1.jpg" alt="" /></a>
                 <h2>পিয়াজ </h2>
                 <p>চট্টগ্রাম</p>
                 <p><span className="price">৳৬০০<br /> তারিখ:২৬ অক্টো ২০২০</span></p>   
-                <div className="button"><span><a href="hatbazaar-preview1.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>
               <div className="grid_1_of_4 images_1_of_4">
                 <a href="#"><img src="assets/images/post2.jpg" alt="" /></a>
                 <h2>রসুন </h2>
                 <p>রাজশাহী</p>
                 <p><span className="price">৳৬৭৮ <br /> তারিখ:২৬ অক্টো ২০২০</span></p> 
-                <div className="button"><span><a href="hatbazaar-preview2.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>
               <div className="grid_1_of_4 images_1_of_4">
                 <a href="#"><img src="assets/images/post3.jpg" alt="" /></a>
                 <h2>ধান </h2>
                 <p>সিলেট</p>
                 <p><span className="price">৳৯৮০<br /> তারিখ:২৬ অক্টো ২০২০</span></p> 
-                <div className="button"><span><a href="hatbazaar-preview3.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>
               <div className="grid_1_of_4 images_1_of_4">
                 <a href="#"><img src="assets/images/post.jpg" alt="" /></a>
                 <h2>আলু</h2>
                 <p>ময়মনসিংহ</p>
                 <p><span className="price">৳৩৩০ <br /> তারিখ:২৬ অক্টো ২০২০</span></p>
-                <div className="button"><span><a href="hatbazaar-preview.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>
               <div className="grid_1_of_4 images_1_of_4">
                 <a href="#"><img src="assets/images/post1.jpg" alt="" /></a>
                 <h2>পিয়াজ </h2>
                 <p>চট্টগ্রাম</p>
                 <p><span className="price">৳৬০০<br /> তারিখ:২৬ অক্টো ২০২০</span></p>   
-                <div className="button"><span><a href ="hatbazaar-preview1.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>
               <div className="grid_1_of_4 images_1_of_4">
                 <a href="#"><img src="assets/images/post2.jpg" alt="" /></a>
                 <h2>রসুন </h2>
                 <p>রাজশাহী</p>
                 <p><span className="price">৳৬৭৮ <br /> তারিখ:২৬ অক্টো ২০২০</span></p> 
-                <div className="button"><span><a href="hatbazaar-preview2.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>
               <div className="grid_1_of_4 images_1_of_4">
                 <a href="#"><img src="assets/images/post3.jpg" alt="" /></a>
                 <h2>ধান </h2>
                 <p>সিলেট</p>
                 <p><span className="price">৳৯৮০<br /> তারিখ:২৬ অক্টো ২০২০</span></p> 
-                <div className="button"><span><a href="hatbazaar-preview3.html" className="details">বিস্তারিত</a></span></div>
+                <div className="button"><a><Link to="/Hatbazaarpreview">বিস্তারিত</Link></a></div>
               </div>				
             </div>
             <div className="footer">

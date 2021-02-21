@@ -17,91 +17,24 @@ class Services extends React.Component{
                 </form>
               </div>
               <div className="shopping_cart">
-                <div className="cart">
-                  <a href="cart.html" title="View my shopping cart" rel="nofollow">
-                    <span className="cart_title">কার্ট<span>
-                        <span className="no_product">(শূন্য)</span>
-                      </span></span></a>
-                </div>
+              <div className="cart"><a> <Link to="/Cart">কার্ট(শূন্য</Link></a>
               </div>
-              <div className="login"><a href="login.html"> লগ ইন</a></div>
+            </div>
+            <div className="login"><a> <Link to="/">লগ আউটস</Link></a></div>
               <div className="clear" />
             </div>
+
             <div className="clear" />
           </div>
           <div className="menu">
             <ul id="dc_mega-menu-orange" className="dc_mm-orange">
-              <li><a href="index.html">চাষী</a></li>
-              <li><a href="hatbazaar.html"> হাটবাজার</a> </li>
-              <li><a id="active" href="service.html">সেবা</a></li>
-              <li><a href="blog.html">ব্লগ</a> </li>
+            <li><Link to="/">চাষী</Link></li>
+            <li> <Link to="/Hatbazaar">হাটবাজার</Link> </li>
+            <li><Link to="/Services">সেবা</Link></li>
+            <li><Link to="/Blog">ব্লগ </Link> </li>
               <div className="clear" />
             </ul>
           </div>
-          <div className="header_bottom">
-            <div className="header_bottom_left">
-              <div className="heading">
-                <h3>সেবা নতুন পণ্য</h3>
-              </div>
-              <div className="section group">
-                <div className="listview_1_of_2 images_1_of_2">
-                  <div className="listimg listimg_2_of_1">
-                    <a href="cart.html"> <img src="assets/images/p.jpg" alt="" /></a>
-                  </div>
-                  <div className="text list_2_of_1">
-                    <h2>মেডিসিন</h2>
-                    <p>ফ্লোরা (১০০ মিলি)</p>
-                    <div className="button"><span><a href="cart.html">অর্ডার করুন</a></span></div>
-                  </div>
-                </div>			
-                <div className="listview_1_of_2 images_1_of_2">
-                  <div className="listimg listimg_2_of_1">
-                    <a href="preview.html"><img src="assets/images/p1.jpg" alt="" /></a>
-                  </div>
-                  <div className="text list_2_of_1">
-                    <h2>কৃষি সার </h2>
-                    <p>শক্তি জিংক</p>
-                    <div className="button"><span><a href="cart.html">অর্ডার করুন</a></span></div>
-                  </div>
-                </div>
-              </div>
-              <div className="section group">
-                <div className="listview_1_of_2 images_1_of_2">
-                  <div className="listimg listimg_2_of_1">
-                    <a href="preview.html"> <img src="assets/images/p2.jpg" alt="" /></a>
-                  </div>
-                  <div className="text list_2_of_1">
-                    <h2>মেডিসিন</h2>
-                    <p>সিপিআর (৪ সিপিএ, পিজিআর হরমোন)</p>
-                    <div className="button"><span><a href="preview.html">অর্ডার করুন</a></span></div>
-                  </div>
-                </div>			
-                <div className="listview_1_of_2 images_1_of_2">
-                  <div className="listimg listimg_2_of_1">
-                    <a href="preview.html"><img src="assets/images/p3.jpg" alt="" /></a>
-                  </div>
-                  <div className="text list_2_of_1">
-                    <h2>কৃষি সার </h2>
-                    <p>কেঁচো সার</p>
-                    <div className="button"><span><a href="preview.html">অর্ডার করুন</a></span></div>
-                  </div>
-                </div>
-              </div>
-              <div className="clear" />
-            </div>
-            <div className="header_bottom_right_images">
-              {/* FlexSlider */}
-              <section className="slider">
-                <div className="flexslider">
-                  <ul className="slides">
-                    <li><img src="assets/images/slide.jpg" alt="" /></li>
-                  </ul>
-                </div>
-              </section>
-              {/* FlexSlider */}
-            </div>
-            <div className="clear" />
-          </div>	
           <div className="main">
             <div className="content">
               <div className="content_top">
@@ -115,25 +48,25 @@ class Services extends React.Component{
                   <a href="preview.html"><img src="assets/images/p.jpg" alt="" /></a>
                   <h2> ফ্লোরা (১০০ মিলি)</h2>
                   <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview.html" className="details">বিস্তারিত</a></span></div>
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>
+                </div>
+                <div className="grid_1_of_4 images_1_of_4">
+                  <a href="preview.html"><img src="assets/images/p.jpg" alt="" /></a>
+                  <h2> ফ্লোরা (১০০ মিলি)</h2>
+                  <p><span className="price">৳৬০০</span></p> 
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>  
                 </div>
                 <div className="grid_1_of_4 images_1_of_4">
                   <a href="preview.html"><img src="assets/images/p.jpg" alt="" /></a>
                   <h2> ফ্লোরা (১০০ মিলি)</h2>
                   <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview.html" className="details">বিস্তারিত</a></span></div>
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>
                 </div>
                 <div className="grid_1_of_4 images_1_of_4">
                   <a href="preview.html"><img src="assets/images/p.jpg" alt="" /></a>
                   <h2> ফ্লোরা (১০০ মিলি)</h2>
                   <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview.html" className="details">বিস্তারিত</a></span></div>
-                </div>
-                <div className="grid_1_of_4 images_1_of_4">
-                  <a href="preview.html"><img src="assets/images/p.jpg" alt="" /></a>
-                  <h2> ফ্লোরা (১০০ মিলি)</h2>
-                  <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview.html" className="details">বিস্তারিত</a></span></div>
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>
                 </div>
               </div>
               <div className="content_bottom">
@@ -147,25 +80,25 @@ class Services extends React.Component{
                   <a href="preview.html"><img src="assets/images/p1.jpg" alt="" /></a>
                   <h2>শক্তি জিংক </h2>
                   <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview1.html" className="details">বিস্তারিত</a></span></div>
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>
                 </div>
                 <div className="grid_1_of_4 images_1_of_4">
                   <a href="preview.html"><img src="assets/images/p1.jpg" alt="" /></a>
                   <h2>শক্তি জিংক </h2>
                   <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview1.html" className="details">বিস্তারিত</a></span></div>
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>
                 </div>
                 <div className="grid_1_of_4 images_1_of_4">
                   <a href="preview.html"><img src="assets/images/p1.jpg" alt="" /></a>
                   <h2>শক্তি জিংক </h2>
                   <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview1.html" className="details">বিস্তারিত</a></span></div>
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>
                 </div>
                 <div className="grid_1_of_4 images_1_of_4">
                   <a href="preview.html"><img src="assets/images/p1.jpg" alt="" /></a>
                   <h2>শক্তি জিংক </h2>
                   <p><span className="price">৳৬০০</span></p>   
-                  <div className="button"><span><a href="preview1.html" className="details">বিস্তারিত</a></span></div>
+                  <div className="button"><a><Link to="/Preview">বিস্তারিত</Link></a></div>
                 </div>
               </div>
             </div>
