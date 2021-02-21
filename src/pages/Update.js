@@ -25,10 +25,10 @@ class Update extends React.Component{
           </div>
           <div className="menu">
             <ul id="dc_mega-menu-orange" className="dc_mm-orange">
-              <li><a href="index.html">চাষী</a></li>
-              <li><a href="hatbazaar.html"> হাটবাজার</a> </li>
-              <li><a id="active" href="service.html">সেবা</a></li>
-              <li><a href="blog.html">ব্লগ</a> </li>
+            <li class ="active"><Link to="/Home">চাষী</Link></li>
+            <li> <Link to="/Hatbazaar">হাটবাজার</Link> </li>
+            <li><Link to="/Services">সেবা</Link></li>
+            <li><Link to="/Blog">ব্লগ </Link> </li>
               <div className="clear" />
             </ul>
           </div>
